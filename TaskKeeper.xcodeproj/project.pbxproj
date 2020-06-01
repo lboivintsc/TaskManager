@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		176033CA24854C6A00702F7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176033C924854C6A00702F7C /* AppDelegate.swift */; };
+		176033CC24854C6A00702F7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176033CB24854C6A00702F7C /* ViewController.swift */; };
+		176033CE24854C6C00702F7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 176033CD24854C6C00702F7C /* Assets.xcassets */; };
+		176033D124854C6C00702F7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 176033CF24854C6C00702F7C /* Main.storyboard */; };
+		176033DD24854C6D00702F7C /* TaskKeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176033DC24854C6D00702F7C /* TaskKeeperTests.swift */; };
+		176033E824854C6D00702F7C /* TaskKeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176033E724854C6D00702F7C /* TaskKeeperUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		176033D924854C6D00702F7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 176033BE24854C6A00702F7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 176033C524854C6A00702F7C;
+			remoteInfo = TaskKeeper;
+		};
+		176033E424854C6D00702F7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 176033BE24854C6A00702F7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 176033C524854C6A00702F7C;
+			remoteInfo = TaskKeeper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		176033C624854C6A00702F7C /* TaskKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		176033C924854C6A00702F7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		176033CB24854C6A00702F7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		176033CD24854C6C00702F7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		176033D024854C6C00702F7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		176033D224854C6C00702F7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		176033D324854C6C00702F7C /* TaskKeeper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TaskKeeper.entitlements; sourceTree = "<group>"; };
+		176033D824854C6D00702F7C /* TaskKeeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskKeeperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		176033DC24854C6D00702F7C /* TaskKeeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskKeeperTests.swift; sourceTree = "<group>"; };
+		176033DE24854C6D00702F7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		176033E324854C6D00702F7C /* TaskKeeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskKeeperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		176033E724854C6D00702F7C /* TaskKeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskKeeperUITests.swift; sourceTree = "<group>"; };
+		176033E924854C6D00702F7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		176033C324854C6A00702F7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		176033D524854C6D00702F7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		176033E024854C6D00702F7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		176033BD24854C6A00702F7C = {
+			isa = PBXGroup;
+			children = (
+				176033C824854C6A00702F7C /* TaskKeeper */,
+				176033DB24854C6D00702F7C /* TaskKeeperTests */,
+				176033E624854C6D00702F7C /* TaskKeeperUITests */,
+				176033C724854C6A00702F7C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		176033C724854C6A00702F7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				176033C624854C6A00702F7C /* TaskKeeper.app */,
+				176033D824854C6D00702F7C /* TaskKeeperTests.xctest */,
+				176033E324854C6D00702F7C /* TaskKeeperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		176033C824854C6A00702F7C /* TaskKeeper */ = {
+			isa = PBXGroup;
+			children = (
+				176033C924854C6A00702F7C /* AppDelegate.swift */,
+				176033CB24854C6A00702F7C /* ViewController.swift */,
+				176033CD24854C6C00702F7C /* Assets.xcassets */,
+				176033CF24854C6C00702F7C /* Main.storyboard */,
+				176033D224854C6C00702F7C /* Info.plist */,
+				176033D324854C6C00702F7C /* TaskKeeper.entitlements */,
+			);
+			path = TaskKeeper;
+			sourceTree = "<group>";
+		};
+		176033DB24854C6D00702F7C /* TaskKeeperTests */ = {
+			isa = PBXGroup;
+			children = (
+				176033DC24854C6D00702F7C /* TaskKeeperTests.swift */,
+				176033DE24854C6D00702F7C /* Info.plist */,
+			);
+			path = TaskKeeperTests;
+			sourceTree = "<group>";
+		};
+		176033E624854C6D00702F7C /* TaskKeeperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				176033E724854C6D00702F7C /* TaskKeeperUITests.swift */,
+				176033E924854C6D00702F7C /* Info.plist */,
+			);
+			path = TaskKeeperUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		176033C524854C6A00702F7C /* TaskKeeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 176033EC24854C6D00702F7C /* Build configuration list for PBXNativeTarget "TaskKeeper" */;
+			buildPhases = (
+				176033C224854C6A00702F7C /* Sources */,
+				176033C324854C6A00702F7C /* Frameworks */,
+				176033C424854C6A00702F7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaskKeeper;
+			productName = TaskKeeper;
+			productReference = 176033C624854C6A00702F7C /* TaskKeeper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		176033D724854C6D00702F7C /* TaskKeeperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 176033EF24854C6D00702F7C /* Build configuration list for PBXNativeTarget "TaskKeeperTests" */;
+			buildPhases = (
+				176033D424854C6D00702F7C /* Sources */,
+				176033D524854C6D00702F7C /* Frameworks */,
+				176033D624854C6D00702F7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				176033DA24854C6D00702F7C /* PBXTargetDependency */,
+			);
+			name = TaskKeeperTests;
+			productName = TaskKeeperTests;
+			productReference = 176033D824854C6D00702F7C /* TaskKeeperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		176033E224854C6D00702F7C /* TaskKeeperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 176033F224854C6D00702F7C /* Build configuration list for PBXNativeTarget "TaskKeeperUITests" */;
+			buildPhases = (
+				176033DF24854C6D00702F7C /* Sources */,
+				176033E024854C6D00702F7C /* Frameworks */,
+				176033E124854C6D00702F7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				176033E524854C6D00702F7C /* PBXTargetDependency */,
+			);
+			name = TaskKeeperUITests;
+			productName = TaskKeeperUITests;
+			productReference = 176033E324854C6D00702F7C /* TaskKeeperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		176033BE24854C6A00702F7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Lindsey Boivin";
+				TargetAttributes = {
+					176033C524854C6A00702F7C = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					176033D724854C6D00702F7C = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 176033C524854C6A00702F7C;
+					};
+					176033E224854C6D00702F7C = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 176033C524854C6A00702F7C;
+					};
+				};
+			};
+			buildConfigurationList = 176033C124854C6A00702F7C /* Build configuration list for PBXProject "TaskKeeper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 176033BD24854C6A00702F7C;
+			productRefGroup = 176033C724854C6A00702F7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				176033C524854C6A00702F7C /* TaskKeeper */,
+				176033D724854C6D00702F7C /* TaskKeeperTests */,
+				176033E224854C6D00702F7C /* TaskKeeperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		176033C424854C6A00702F7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				176033CE24854C6C00702F7C /* Assets.xcassets in Resources */,
+				176033D124854C6C00702F7C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		176033D624854C6D00702F7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		176033E124854C6D00702F7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		176033C224854C6A00702F7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				176033CC24854C6A00702F7C /* ViewController.swift in Sources */,
+				176033CA24854C6A00702F7C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		176033D424854C6D00702F7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				176033DD24854C6D00702F7C /* TaskKeeperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		176033DF24854C6D00702F7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				176033E824854C6D00702F7C /* TaskKeeperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		176033DA24854C6D00702F7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 176033C524854C6A00702F7C /* TaskKeeper */;
+			targetProxy = 176033D924854C6D00702F7C /* PBXContainerItemProxy */;
+		};
+		176033E524854C6D00702F7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 176033C524854C6A00702F7C /* TaskKeeper */;
+			targetProxy = 176033E424854C6D00702F7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		176033CF24854C6C00702F7C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				176033D024854C6C00702F7C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		176033EA24854C6D00702F7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		176033EB24854C6D00702F7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		176033ED24854C6D00702F7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TaskKeeper/TaskKeeper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TaskKeeper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = linnSystems.TaskKeeper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		176033EE24854C6D00702F7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TaskKeeper/TaskKeeper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TaskKeeper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = linnSystems.TaskKeeper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		176033F024854C6D00702F7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TaskKeeperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = linnSystems.TaskKeeperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaskKeeper.app/Contents/MacOS/TaskKeeper";
+			};
+			name = Debug;
+		};
+		176033F124854C6D00702F7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TaskKeeperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = linnSystems.TaskKeeperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaskKeeper.app/Contents/MacOS/TaskKeeper";
+			};
+			name = Release;
+		};
+		176033F324854C6D00702F7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TaskKeeperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = linnSystems.TaskKeeperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = TaskKeeper;
+			};
+			name = Debug;
+		};
+		176033F424854C6D00702F7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TaskKeeperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = linnSystems.TaskKeeperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = TaskKeeper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		176033C124854C6A00702F7C /* Build configuration list for PBXProject "TaskKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				176033EA24854C6D00702F7C /* Debug */,
+				176033EB24854C6D00702F7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		176033EC24854C6D00702F7C /* Build configuration list for PBXNativeTarget "TaskKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				176033ED24854C6D00702F7C /* Debug */,
+				176033EE24854C6D00702F7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		176033EF24854C6D00702F7C /* Build configuration list for PBXNativeTarget "TaskKeeperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				176033F024854C6D00702F7C /* Debug */,
+				176033F124854C6D00702F7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		176033F224854C6D00702F7C /* Build configuration list for PBXNativeTarget "TaskKeeperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				176033F324854C6D00702F7C /* Debug */,
+				176033F424854C6D00702F7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 176033BE24854C6A00702F7C /* Project object */;
+}
