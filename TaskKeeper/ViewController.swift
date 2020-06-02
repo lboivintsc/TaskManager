@@ -24,6 +24,7 @@ class ViewController: NSViewController, NSTextFieldDelegate {
       view.layer?.backgroundColor = NSColor.black.cgColor
       // Handle the text field’s user input through delegate callbacks.
       itemTextField.delegate = self
+      //self.window.backgroundColor = NSColor.black.cgColor
    }
 
    override var representedObject: Any? {
@@ -53,7 +54,6 @@ class ViewController: NSViewController, NSTextFieldDelegate {
    //MARK: Actions
    
    @IBAction func setDefaultLabelText(_ sender: NSButton) {
-      
       listItemLabel.stringValue = "Default Text"
    }
    
