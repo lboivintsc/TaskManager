@@ -16,7 +16,7 @@
 		176033F62486964C00702F7C /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176033F52486964C00702F7C /* Task.swift */; };
 		176033F82486B47F00702F7C /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176033F72486B47F00702F7C /* TableController.swift */; };
 		176033FA2486C95D00702F7C /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176033F92486C95D00702F7C /* TaskItem.swift */; };
-		176033FC2486E84400702F7C /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176033FB2486E84400702F7C /* TaskCell.swift */; };
+		176034042489752E00702F7C /* TaskTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176034032489752E00702F7C /* TaskTextFieldCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +53,8 @@
 		176033F52486964C00702F7C /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		176033F72486B47F00702F7C /* TableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
 		176033F92486C95D00702F7C /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
-		176033FB2486E84400702F7C /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		176034032489752E00702F7C /* TaskTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTextFieldCell.swift; sourceTree = "<group>"; };
+		176034072489864400702F7C /* TaskKeeper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TaskKeeper-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,11 +110,12 @@
 				176033F72486B47F00702F7C /* TableController.swift */,
 				176033CD24854C6C00702F7C /* Assets.xcassets */,
 				176033CF24854C6C00702F7C /* Main.storyboard */,
-				176033FB2486E84400702F7C /* TaskCell.swift */,
+				176034032489752E00702F7C /* TaskTextFieldCell.swift */,
 				176033F92486C95D00702F7C /* TaskItem.swift */,
 				176033F52486964C00702F7C /* Task.swift */,
 				176033D224854C6C00702F7C /* Info.plist */,
 				176033D324854C6C00702F7C /* TaskKeeper.entitlements */,
+				176034072489864400702F7C /* TaskKeeper-Bridging-Header.h */,
 			);
 			path = TaskKeeper;
 			sourceTree = "<group>";
@@ -204,6 +206,7 @@
 				TargetAttributes = {
 					176033C524854C6A00702F7C = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					176033D724854C6D00702F7C = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -270,8 +273,8 @@
 				176033FA2486C95D00702F7C /* TaskItem.swift in Sources */,
 				176033CC24854C6A00702F7C /* ViewController.swift in Sources */,
 				176033F62486964C00702F7C /* Task.swift in Sources */,
-				176033FC2486E84400702F7C /* TaskCell.swift in Sources */,
 				176033CA24854C6A00702F7C /* AppDelegate.swift in Sources */,
+				176034042489752E00702F7C /* TaskTextFieldCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +438,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = TaskKeeper/TaskKeeper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -445,6 +449,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = linnSystems.TaskKeeper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TaskKeeper/TaskKeeper-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -453,6 +459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = TaskKeeper/TaskKeeper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -463,6 +470,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = linnSystems.TaskKeeper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TaskKeeper/TaskKeeper-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

@@ -8,10 +8,11 @@
 
 import Cocoa
 
-class TableController: NSViewController, NSTextFieldDelegate {
+class TableController: NSViewController, NSTextFieldDelegate, NSTableViewDelegate, NSTableViewDataSource {
    
    //MARK: Properties
    @IBOutlet weak var transitionButton: NSButton!
+   @IBOutlet weak var tableView: NSTableView!
    
    var tasks = [Task]()
    
@@ -25,8 +26,12 @@ class TableController: NSViewController, NSTextFieldDelegate {
       view.wantsLayer = true
       // change the background color of the layer
       view.layer?.backgroundColor = NSColor.black.cgColor
-      // Handle the text field’s user input through delegate callbacks.
-      //itemTextField.delegate = self
+      
+      tableView.reloadData()
+      
+      tableView.delegate = self
+      tableView.dataSource = self
+
    }
 
    override var representedObject: Any? {
@@ -34,16 +39,47 @@ class TableController: NSViewController, NSTextFieldDelegate {
       // Update the view, if already loaded.
       }
    }
-
    
+   func getTasks() -> [Task]{
+      return tasks
+   }
+   
+   func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
 
-   //MARK: Actions
-   @IBAction func buttonTransition(_ sender: NSButton) {
+      if tableColumn!.identifier.rawValue == "TaskColumn"{
+         var cell = tableColumn!.dataCell(forRow: row) as? NSTextFieldCell
+         if tasks[row].status == false{
+            cell?.textColor = NSColor.gray
+         }
+         return tasks[row].name
+      }
+      else{
+         var im = #imageLiteral(resourceName: "check_empty")
+         if tasks[row].status == true{
+            im = #imageLiteral(resourceName: "check_filled")
+         }
+         return im
+      }
+         
+   }
       
-      if let controller = self.storyboard?.instantiateController(withIdentifier: "ItemView") as? ViewController {
+      
+     
+   @IBAction func clickedItem(_ sender: Any) {
+      //performSegue(withIdentifier: "itemClicked", sender: self)
+      if let controller = self.storyboard?.instantiateController(withIdentifier: "ItemCloseUp") as? ViewController {
       self.view.window?.contentViewController = controller
       }
    }
+   
+   
+   
+
+   func numberOfRows(in tableView: NSTableView) -> Int {
+      return tasks.count
+   }
+
+
    
    //MARK: Private Methods
     
@@ -65,6 +101,9 @@ class TableController: NSViewController, NSTextFieldDelegate {
        
    }
    
+   
 
 }
+
+
 
