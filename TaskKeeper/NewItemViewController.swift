@@ -1,28 +1,27 @@
 //
-//  ViewController.swift
+//  NewItemViewController.swift
 //  TaskKeeper
 //
-//  Created by Lindsey Boivin on 6/1/20.
+//  Created by Lindsey Boivin on 6/8/20.
 //  Copyright © 2020 Lindsey Boivin. All rights reserved.
 //
 
 import Cocoa
 
-class ViewController: NSViewController, NSTextFieldDelegate {
+class NewItemViewController: NSViewController, NSTextFieldDelegate {
    
    //MARK: Properties
-
+   
    @IBOutlet weak var listItemLabel: NSTextField!
    @IBOutlet weak var itemTextField: NSTextField!
-   @IBOutlet weak var saveButton: NSButton!
    @IBOutlet weak var statusButton: NSButton!
-   
    
    /*
     This value is either passed by 'TableController'
     or constructed as part of adding a new task.
     */
    var task: Task?
+   
    
 
    override func viewDidLoad() {
@@ -62,6 +61,7 @@ class ViewController: NSViewController, NSTextFieldDelegate {
 
    //MARK: Actions
    
+   
    @IBAction func goBack(_ sender: NSButton) {
       if let controller = self.storyboard?.instantiateController(withIdentifier: "TableView") as? TableController {
       self.view.window?.contentViewController = controller
@@ -82,10 +82,12 @@ class ViewController: NSViewController, NSTextFieldDelegate {
       
       if let controller = self.storyboard?.instantiateController(withIdentifier: "TableView") as? TableController {
          
-         controller.unwindToTaskList(sender: (self.view.window?.contentViewController!)!)
+         controller.unwindToTaskListNew(sender: (self.view.window?.contentViewController!)!)
          self.view.window?.contentViewController = controller
       }
+      
    }
    
 }
+
 

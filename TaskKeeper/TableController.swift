@@ -73,6 +73,30 @@ class TableController: NSViewController, NSTextFieldDelegate, NSTableViewDelegat
    }
    
    
+   @IBAction func newTask(_ sender: NSButton) {
+      if let controller = self.storyboard?.instantiateController(withIdentifier: "NewTask") as? NewItemViewController {
+      self.view.window?.contentViewController = controller
+      }
+   }
+   
+   func unwindToTaskList(sender: NSViewController) {
+      if let sourceViewController = sender as? ViewController, let task = sourceViewController.task {
+         // Add a new task
+         //let newIndexPath = IndexPath(row: tasks.count, section: 0)
+         tasks.append(task)
+       }
+   }
+   
+   func unwindToTaskListNew(sender: NSViewController) {
+      if let sourceViewController = sender as? NewItemViewController, let task = sourceViewController.task {
+         // Add a new task
+         //let newIndexPath = IndexPath(row: tasks.count, section: 0)
+         tasks.append(task)
+       }
+   }
+
+   
+   
    
 
    func numberOfRows(in tableView: NSTableView) -> Int {

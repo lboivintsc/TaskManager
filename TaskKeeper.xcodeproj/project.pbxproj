@@ -17,6 +17,7 @@
 		176033F82486B47F00702F7C /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176033F72486B47F00702F7C /* TableController.swift */; };
 		176033FA2486C95D00702F7C /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176033F92486C95D00702F7C /* TaskItem.swift */; };
 		176034042489752E00702F7C /* TaskTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176034032489752E00702F7C /* TaskTextFieldCell.swift */; };
+		1760340C248E86DC00702F7C /* NewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1760340B248E86DC00702F7C /* NewItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		176033F92486C95D00702F7C /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
 		176034032489752E00702F7C /* TaskTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTextFieldCell.swift; sourceTree = "<group>"; };
 		176034072489864400702F7C /* TaskKeeper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TaskKeeper-Bridging-Header.h"; sourceTree = "<group>"; };
+		1760340B248E86DC00702F7C /* NewItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				176033F72486B47F00702F7C /* TableController.swift */,
 				176033CD24854C6C00702F7C /* Assets.xcassets */,
 				176033CF24854C6C00702F7C /* Main.storyboard */,
+				1760340B248E86DC00702F7C /* NewItemViewController.swift */,
 				176034032489752E00702F7C /* TaskTextFieldCell.swift */,
 				176033F92486C95D00702F7C /* TaskItem.swift */,
 				176033F52486964C00702F7C /* Task.swift */,
@@ -275,6 +278,7 @@
 				176033F62486964C00702F7C /* Task.swift in Sources */,
 				176033CA24854C6A00702F7C /* AppDelegate.swift in Sources */,
 				176034042489752E00702F7C /* TaskTextFieldCell.swift in Sources */,
+				1760340C248E86DC00702F7C /* NewItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
